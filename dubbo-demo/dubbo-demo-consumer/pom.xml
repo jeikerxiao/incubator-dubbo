@@ -29,31 +29,38 @@
         <skip_maven_deploy>true</skip_maven_deploy>
     </properties>
     <dependencies>
+        <!--依赖服务接口api-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo-demo-api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <!--dubbo 配置-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo-config-spring</artifactId>
         </dependency>
+        <!-- 注册中心:zookeeper实现（生产推荐） -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo-registry-zookeeper</artifactId>
         </dependency>
+        <!-- 注册中心:multicast内存广播实现（生产不推荐） -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo-registry-multicast</artifactId>
         </dependency>
+        <!--远程调用：rpc -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo-rpc-dubbo</artifactId>
         </dependency>
+        <!--通信框架：netty4 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo-remoting-netty4</artifactId>
         </dependency>
+        <!--序列化：hessian2 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo-serialization-hessian2</artifactId>
